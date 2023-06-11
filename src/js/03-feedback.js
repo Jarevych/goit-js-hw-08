@@ -9,7 +9,7 @@ const refs = {
 };
 
 refs.form.addEventListener('submit', onSubmitForm);
-refs.form.addEventListener('input', throttle(onInputArea, 1250));
+refs.form.addEventListener('input', throttle(onInputArea, 250));
 
 const formData = {};
 
