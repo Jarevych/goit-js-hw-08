@@ -16,13 +16,13 @@ const formData = {};
 function onInputArea(evt) {
     formData[evt.target.name] = evt.target.value;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
-    console.log(formData);
 };
 
 function onSubmitForm(evt) {
     evt.preventDefault();
     evt.currentTarget.reset();
     localStorage.clear();
+    console.log(formData);
 };
 
 function restorePage (){
